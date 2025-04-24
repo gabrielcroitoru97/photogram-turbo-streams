@@ -1,4 +1,6 @@
-<%= form_with(model: like, local: false,) do |form| %>
+<%= form_with(model: like, id: dom_id(like)) do |form| %>
+
+
   <%= form.hidden_field :fan_id %>
 
   <%= form.hidden_field :photo_id %>
